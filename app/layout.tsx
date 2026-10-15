@@ -13,10 +13,16 @@ const quicksand = localFont({
   display: "swap",
 });
 
+const flaticon = localFont({
+  src: "./fonts/Flaticon/flaticon.woff2",
+  variable: "--font-flaticon",
+  display: "swap",
+});
+
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${cabin.variable} ${quicksand.variable}`} >
+    <html lang="en" className={`${cabin.variable} ${quicksand.variable} ${flaticon.variable}`} >
       <body>{children}</body>
     </html>
   );

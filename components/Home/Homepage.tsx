@@ -2,6 +2,7 @@
 import Header from "../common/Header";
 import Hero from "./Hero";
 import Services from "../common/Services";
+import WhyUs from "../common/WhyUs";
 
 
 const Homepage = () => {
@@ -10,6 +11,7 @@ const Homepage = () => {
             <Header />
             <Hero />
             <Services />
+            <WhyUs />
         </>
     );
 };

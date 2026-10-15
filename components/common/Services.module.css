@@ -1,0 +1,48 @@
+.heading {
+    font-family: Quicksand, sans-serif;
+}
+
+.fi {
+    font-family: Flaticon;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.serviceCard {
+    min-height: 270px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 46px 44px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, .09);
+}
+
+.serviceCard .fi {
+    display: block;
+    margin-bottom: 38px;
+    font-size: 48px;
+}
+
+.serviceCard h3 {
+    color: #272727;
+    font-family: Quicksand, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.serviceCard p {
+    margin-top: 24px;
+    color: #2f2f2f;
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+@media (max-width: 640px) {
+    .serviceCard {
+        min-height: 0;
+        padding: 32px;
+    }
+}
