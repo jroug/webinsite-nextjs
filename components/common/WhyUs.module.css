@@ -49,6 +49,24 @@
      font-weight: 500;
      line-height: 1.8;
  }
+.listCheck {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 14px;
+    height: 14px;
+    color: #9ba0a6;
+}
+
+.listCheck::before {
+    content: "\f170";
+    display: block;
+    font-family: "Flaticon";
+    font-size: 14px;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    top: 5px;
+ }
 
  @media (max-width:640px) {
      .card {

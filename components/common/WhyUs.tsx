@@ -10,10 +10,10 @@ const WhyUs = () => {
                     <h2 className="max-w-[510px] text-[30px] font-bold leading-[1.25] text-[#252525]">One Agency for all your digital needs</h2>
                     <p className="mt-6 text-lg font-bold text-[#0090ff]">Customer Satisfaction is our priority</p>
                     <ul className="mt-6 space-y-3 text-sm font-medium leading-6 text-[#838383]">
-                        <li className="flex gap-2"><span className="text-[#9ba0a6]">⊙</span> Get all your services with us</li>
-                        <li className="flex gap-2"><span className="text-[#9ba0a6]">⊙</span> From Design, Development to Hosting and Supporting your web solution</li>
-                        <li className="flex gap-2"><span className="text-[#9ba0a6]">⊙</span> From Launching to Google Marketing</li>
-                        <li className="flex gap-2"><span className="text-[#9ba0a6]">⊙</span> Continue to grow your business through social media campaigns</li>
+                        <li className="flex gap-2"><span aria-hidden="true" className={styles.listCheck} /> Get all your services with us</li>
+                        <li className="flex gap-2"><span aria-hidden="true" className={styles.listCheck} /> From Design, Development to Hosting and Supporting your web solution</li>
+                        <li className="flex gap-2"><span aria-hidden="true" className={styles.listCheck} /> From Launching to Google Marketing</li>
+                        <li className="flex gap-2"><span aria-hidden="true" className={styles.listCheck} /> Continue to grow your business through social media campaigns</li>
                     </ul>
                     <a href="#contact" className="mt-8 inline-block rounded-full bg-[#223653] px-9 py-4 text-sm font-bold text-white transition hover:bg-[#0090ff]">Contact Us</a>
                 </div>
