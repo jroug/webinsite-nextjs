@@ -6,12 +6,17 @@ const cabin = localFont({
   variable: "--font-cabin",
   display: "swap",
 });
- 
+
+const quicksand = localFont({
+  src: "./fonts/Quicksand/Quicksand-VariableFont_wght.ttf",
+  variable: "--font-quicksand",
+  display: "swap",
+});
 
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={cabin.variable} >
+    <html lang="en" className={`${cabin.variable} ${quicksand.variable}`} >
       <body>{children}</body>
     </html>
   );
