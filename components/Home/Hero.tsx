@@ -16,7 +16,7 @@ const Hero = () => {
             />
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.28),transparent_60%)]" />
 
-            <div className="relative mx-auto grid min-h-[560px] max-w-[1140px] items-center gap-12 px-5 py-16 sm:min-h-[620px] lg:min-h-[650px] lg:grid-cols-[1fr_0.95fr]">
+            <div className="relative mx-auto grid min-h-[560px] container items-center gap-12 px-5 py-16 sm:min-h-[620px] lg:min-h-[650px] lg:grid-cols-[1fr_0.95fr]">
                 <div className="max-w-[570px]" style={{ fontFamily: "Quicksand, sans-serif" }}>
                     <h1 className="text-4xl font-bold leading-[1.25] tracking-[-0.02em] sm:text-5xl lg:text-[48px]">
                         All your Digital Solutions<br className="hidden sm:block" /> in one Agency

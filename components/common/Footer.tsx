@@ -3,11 +3,11 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer id="footer" className="bg-[#202b39] pt-16 text-white sm:pt-20">
-            <div className="mx-auto max-w-[1140px] px-5">
+            <div className="mx-auto container px-5">
                 <div className="grid gap-12 border-b border-white/10 pb-14 sm:grid-cols-2 lg:grid-cols-[1.45fr_0.8fr_0.9fr_1.25fr] lg:gap-10">
                     <div>
                         <a href="#home" aria-label="WebInsite home" className="inline-block">
-                            <Image src="/images/logo-webinsite.png" alt="WebInsite" width={215} height={72} className="h-auto w-[185px]" />
+                            <Image src="/images/logo-main.png" alt="WebInsite" width={256} height={57} className="h-auto w-[256px]" />
                         </a>
                         <p className="mt-7 max-w-[285px] text-sm leading-7 text-white/70">
                             We deliver innovative web design, development, marketing, eCommerce, SEO, and hosting solutions to empower brands in the digital world.

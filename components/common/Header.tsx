@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navigation from "./Navigation";
 
 const Header = () => {
@@ -5,13 +6,9 @@ const Header = () => {
         <header
             className="relative z-10 bg-[#202b39] text-white"
         >
-            <div className="mx-auto flex h-[92px] max-w-[1180px] items-center justify-between px-5 sm:h-[110px] lg:h-[132px]">
+            <div className="mx-auto flex h-[92px] container items-center justify-between px-5 sm:h-[110px] lg:h-[120px]">
                 <a href="#home" aria-label="WebInsite home">
-                    <img
-                        src="/images/logo-webinsite.png"
-                        alt="WebInsite"
-                        className="h-auto w-[175px] sm:w-[300px]"
-                    />
+                    <Image src="/images/logo-main.png" alt="WebInsite" width={256} height={57} className="mt-[-5px] h-auto w-[256px]" />
                 </a>
 
                 <Navigation />

@@ -3,11 +3,8 @@ import styles from "./Services.module.css";
 
 const Services = () => {
     return (
-        <section id="services" className="relative overflow-hidden bg-white py-20 sm:py-28 lg:py-32">
- 
-
-
-            <div className="relative mx-auto max-w-[1140px] px-5">
+        <section id="services" className="container mx-auto relative overflow-hidden bg-white py-20 sm:py-28 lg:py-32">
+            <div className="relative mx-auto px-5">
                 <div className="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-16">
                     <div className={`${styles.heading} pt-1`}>
                         <p className="text-base font-bold text-[#273041]">Our Services</p>
@@ -15,7 +12,7 @@ const Services = () => {
                         <h2 className="text-[30px] font-bold leading-[1.25] text-[#252525]">We Are Providing<br />Digital Services</h2>
                     </div>
                 </div>
-                <div className="relative mx-auto max-w-[1140px] px-5  mt-[20px] sm:mt-[30px] lg:mt-[-80px] ">
+                <div className="relative mx-auto px-5  mt-[20px] sm:mt-[30px] lg:mt-[-80px] ">
                     <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
                         <article className={`${styles.serviceCard} lg:translate-y-52`}><i className={`${styles.fi} text-[#0090ff]`}>&#xf198;</i><h3>Web Design &amp;<br />Development</h3><p>Creating responsive, user-friendly websites tailored to elevate your brand and engage your audience.</p></article>
                         <article className={`${styles.serviceCard} lg:-translate-y-6`}><i className={`${styles.fi} text-[#0090ff]`}>&#xf190;</i><h3>Digital Marketing</h3><p>Strategic digital campaigns that drive traffic, boost engagement, and enhance brand visibility.</p></article>
