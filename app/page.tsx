@@ -1,9 +1,14 @@
 import Homepage from "@/components/home/Homepage";
+import getHomepageData from "@/utils/homapageData";
 
-export default function Home() {
+
+export default async function Home() {
+  
+  const homepageData = await getHomepageData();
+  
   return (
     <>
-        <Homepage />
+        <Homepage homepageData={homepageData} />
     </>
   );
 }

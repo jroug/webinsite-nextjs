@@ -10,6 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 /_html
+/_http
 
 # testing
 /coverage
