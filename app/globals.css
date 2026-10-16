@@ -1,5 +1,5 @@
 @import "tailwindcss";
- 
+@import "./styles/flaticon.css";
 
 /* Change data-theme on the <html> element in app/layout.tsx to switch palettes. */
 :root,
@@ -92,3 +92,5 @@ body {
 #footer h2{
   font-family: Quicksand, sans-serif;
 }
+
+

@@ -1,84 +1,56 @@
 
 import styles from "./Services.module.css";
+import getServicesSectionData from "@/utils/servicesSectionData";
 
-const Services = () => {
+const Services = async () => {
+
+    const servicesData = await getServicesSectionData();
+    const boxes = (servicesData as any)?.sectionOurServices?.sectionOurServicesFields;
+
+    const serviceBoxes = [
+      boxes?.box1,
+      boxes?.box2,
+      boxes?.box3,
+      boxes?.box4,
+      boxes?.box5,
+    ].filter(Boolean);
+
     return (
       <section
         id="services"
-        className="container mx-auto relative overflow-hidden py-20 sm:py-28 lg:py-32"
+        className="container mx-auto relative overflow-hidden py-10 sm:py-16 lg:py-25"
       >
         <div className="relative mx-auto px-5">
           <div className="grid gap-10 lg:grid-cols-[300px_1fr] lg:gap-16">
             <div className={`${styles.heading} pt-1`}>
-              <p className="text-base font-bold text-[var(--color-ink)]">Our Services</p>
+              <p className="text-base font-bold text-[var(--color-ink)]">{boxes?.smallTitleTop}</p>
               <div className="my-4 flex items-center gap-1.5">
                 <span className="h-[2px] w-3 bg-[var(--color-accent)]" />
                 <span className="h-[4px] w-3 bg-[var(--color-ink)]" />
                 <span className="h-[2px] w-3 bg-[var(--color-accent)]" />
               </div>
               <h2 className="text-[30px] font-bold leading-[1.25] text-[var(--color-heading)]">
-                We Are Providing
-                <br />
-                Digital Services
+                {boxes?.mainTitle}
               </h2>
             </div>
           </div>
-          <div className="relative mx-auto px-5  mt-[20px] sm:mt-[30px] lg:mt-[-80px] ">
+          <div className="relative mx-auto px-5 mt-[20px] sm:mt-[30px] lg:mt-[-80px] ">
             <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-              <article className={`${styles.serviceCard} lg:translate-y-52`}>
-                <a className={styles.cardLink} href="#">
-                  <i className={styles.fi}>&#xf198;</i>
-                  <h3>
-                    Web Design &amp;
-                    <br />
-                    Development
-                  </h3>
-                  <p>
-                    Creating responsive, user-friendly websites tailored to
-                    elevate your brand and engage your audience.
-                  </p>
-                </a>
-              </article>
-              <article className={`${styles.serviceCard} lg:-translate-y-6`}>
-                <a className={styles.cardLink} href="#">
-                  <i className={styles.fi}>&#xf190;</i>
-                  <h3>Digital Marketing</h3>
-                  <p>
-                    Strategic digital campaigns that drive traffic, boost
-                    engagement, and enhance brand visibility.
-                  </p>
-                </a>
-              </article>
-              <article className={`${styles.serviceCard} lg:translate-y-7`}>
-                <a className={styles.cardLink} href="#">
-                  <i className={styles.fi}>&#xf192;</i>
-                  <h3>SEO Optimization</h3>
-                  <p>
-                    Boosting your website’s ranking with tailored SEO strategies
-                    for improved visibility and search engine performance.
-                  </p>
-                </a>
-              </article>
-              <article className={`${styles.serviceCard} sm:col-start-2 lg:col-start-2 lg:translate-y-3`} >
-                <a className={styles.cardLink} href="#">
-                  <i className={styles.fi}>&#xf193;</i>
-                  <h3>Ecommerce</h3>
-                  <p>
-                    Building scalable, secure eCommerce platforms to grow your
-                    business and maximize online sales.
-                  </p>
-                </a>
-              </article>
-              <article className={`${styles.serviceCard} sm:col-start-2 lg:col-start-3 lg:translate-y-16`} >
-                <a className={styles.cardLink} href="#">
-                  <i className={styles.fi}>&#xf19f;</i>
-                  <h3>Hosting</h3>
-                  <p>
-                    Reliable, secure hosting solutions for optimal website
-                    performance and uptime.
-                  </p>
-                </a>
-              </article>
+              {
+                  serviceBoxes.map((box, index) => (
+                    <article key={`box-${index}`} className={`${styles.serviceCard}`}>
+                      <a className={styles.cardLink} href="#">
+                        <div className={`${styles.iconBox}`}><span className={`icon ${box?.boxIconClass}`}></span></div>
+                        <h3>
+                          {box?.boxTitle}
+                        </h3>
+                        <p>
+                          {box?.boxText}
+                        </p>
+                      </a>
+                    </article>
+                  ))
+              }
             </div>
           </div>
         </div>

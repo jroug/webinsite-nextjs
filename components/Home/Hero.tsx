@@ -49,8 +49,8 @@ const Hero = ({ heroData }: { heroData: any }) => {
                                 src={heroData.heroImageOverlay.sourceUrl}
                                 alt="Placeholder for a future marketing illustration"
                                 className="relative w-full"
-                                width={440}
-                                height={300}
+                                width={640}
+                                height={420}
                             />
                         )
                     }

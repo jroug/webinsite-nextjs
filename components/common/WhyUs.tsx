@@ -2,8 +2,8 @@ import styles from "./WhyUs.module.css";
  
 const WhyUs = () => {
     return (
-        <section id="why-us" className="container mx-auto relative overflow-hidden py-20 sm:py-28 lg:py-32">
-            <div className="mx-auto grid items-center gap-16 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
+        <section id="why-us" className="container mx-auto relative overflow-hidden py-10 sm:py-16 lg:py-25">
+            <div className="mx-auto grid items-top gap-16 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
                 <div className={styles.whyUsContent}>
                     <p className="text-base font-bold text-[var(--color-ink)]">Why Us</p>
                     <div className="my-4 flex items-center gap-1.5"><span className="h-[2px] w-3 bg-[var(--color-accent)]" /><span className="h-[4px] w-3 bg-[var(--color-ink)]" /><span className="h-[2px] w-3 bg-[var(--color-accent)]" /></div>
