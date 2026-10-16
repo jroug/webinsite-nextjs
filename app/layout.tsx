@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const cabin = localFont({
   src: "./fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf",
@@ -23,7 +25,11 @@ const flaticon = localFont({
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" data-theme="ocean" className={`${cabin.variable} ${quicksand.variable} ${flaticon.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+          <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
