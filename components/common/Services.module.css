@@ -12,8 +12,8 @@
 .serviceCard {
     min-height: 270px;
     border-radius: 12px;
-    background: #fff;
-    box-shadow: 0 12px 32px var(--boxShadowColor);
+    background: var(--color-surface);
+    box-shadow: 0 12px 32px var(--color-shadow);
     transition: background-color .35s ease, box-shadow .35s ease;
 }
 
@@ -29,11 +29,12 @@
     display: block;
     margin-bottom: 38px;
     font-size: 48px;
+    color: var(--color-primary);
     transition: color .35s ease;
 }
 
 .serviceCard h3 {
-    color: #272727;
+    color: var(--color-heading);
     font-family: Quicksand, sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -43,7 +44,7 @@
 
 .serviceCard p {
     margin-top: 24px;
-    color: #2f2f2f;
+    color: var(--color-card-copy);
     font-family: Quicksand, sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -52,7 +53,7 @@
 }
 
 .serviceCard:hover {
-    background-color: var(--blueLightColor);
+    background-color: var(--color-primary);
 }
 
 .serviceCard:hover .fi,

@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 const Header = () => {
     return (
         <header
-            className="relative z-10 bg-[#202b39] text-white"
+            className="relative z-10 bg-[var(--color-header)] text-white"
         >
             <div className="mx-auto flex h-[92px] container items-center justify-between px-5 sm:h-[110px] lg:h-[120px]">
                 <a href="#home" aria-label="WebInsite home">

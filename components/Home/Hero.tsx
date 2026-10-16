@@ -24,23 +24,23 @@ const Hero = () => {
                     <p className="mt-10 text-base font-bold">Your Partner in Growth!</p>
                     <a
                         href="#portfolio"
-                        className="mt-12 inline-flex items-center overflow-hidden rounded-full bg-[#2756ee] text-base font-bold shadow-lg shadow-blue-950/20 transition hover:bg-[#183fd3]"
+                        className="mt-12 inline-flex items-center overflow-hidden rounded-full bg-[var(--color-primary-strong)] text-base font-bold shadow-lg shadow-black/20 transition hover:bg-[var(--color-primary-dark)]"
                     >
                         <span className="px-10 py-4">Portfolio</span>
-                        <span className="grid h-[60px] w-[60px] place-items-center rounded-full bg-white text-3xl text-[#193da9]">→</span>
+                        <span className="grid h-[60px] w-[60px] place-items-center rounded-full bg-[var(--color-surface)] text-3xl text-[var(--color-primary-dark)]">→</span>
                     </a>
                 </div>
 
                 <div className="relative mx-auto hidden w-full max-w-[440px] lg:block" aria-label="Placeholder marketing illustration">
-                    <div className="absolute -left-12 top-1/2 h-px w-16 bg-[#79a9f4]" />
-                    <div className="absolute -right-16 top-14 h-px w-32 rotate-[-24deg] bg-[#79a9f4]" />
+                    <div className="absolute -left-12 top-1/2 h-px w-16 bg-[var(--color-primary-soft)]" />
+                    <div className="absolute -right-16 top-14 h-px w-32 rotate-[-24deg] bg-[var(--color-primary-soft)]" />
                     <img
                         src="/images/resource/1.png"
                         alt="Placeholder for a future marketing illustration"
                         className="relative w-full rounded-2xl border border-white/25 bg-white/15 p-2 shadow-2xl shadow-black/50"
                     />
-                    <span className="absolute -left-6 top-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#6ea1f3] text-xl text-[#183393] shadow-xl">⌕</span>
-                    <span className="absolute -right-8 bottom-5 grid h-16 w-16 place-items-center rounded-lg bg-white text-3xl text-[#2756ee] shadow-xl">↗</span>
+                    <span className="absolute -left-6 top-1/2 grid h-14 w-14 place-items-center rounded-full bg-[var(--color-primary-soft)] text-xl text-[var(--color-primary-dark)] shadow-xl">⌕</span>
+                    <span className="absolute -right-8 bottom-5 grid h-16 w-16 place-items-center rounded-lg bg-[var(--color-surface)] text-3xl text-[var(--color-primary-strong)] shadow-xl">↗</span>
                 </div>
             </div>
         </section>

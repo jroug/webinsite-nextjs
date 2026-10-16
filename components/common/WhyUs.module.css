@@ -7,9 +7,9 @@
      display: flex;
      overflow: hidden;
      border-radius: 14px;
-     background: #fff;
+     background: var(--color-surface);
      padding: 40px 40px 0;
-     box-shadow: 0 12px 32px var(--boxShadowColor);
+     box-shadow: 0 12px 32px var(--color-shadow);
  }
 
 .icon {
@@ -35,7 +35,7 @@
 }
 
 .content h3 {
-     color: #3d415b;
+     color: var(--color-card-heading);
      font-family: Quicksand, sans-serif;
      font-size: 18px;
      font-weight: 700;
@@ -43,7 +43,7 @@
 
 .content p {
      margin-top: 14px;
-     color: #363636;
+     color: var(--color-card-copy);
      font-family: Quicksand, sans-serif;
      font-size: 14px;
      font-weight: 500;
@@ -54,7 +54,7 @@
     display: inline-block;
     flex: 0 0 14px;
     height: 14px;
-    color: #9ba0a6;
+    color: var(--color-muted);
 }
 
 .listCheck::before {

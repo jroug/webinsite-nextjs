@@ -22,7 +22,7 @@ const flaticon = localFont({
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${cabin.variable} ${quicksand.variable} ${flaticon.variable}`} >
+    <html lang="en" data-theme="ocean" className={`${cabin.variable} ${quicksand.variable} ${flaticon.variable}`}>
       <body>{children}</body>
     </html>
   );

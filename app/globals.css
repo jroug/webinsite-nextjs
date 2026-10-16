@@ -1,18 +1,74 @@
 @import "tailwindcss";
  
 
-:root {
-  --lightColor: #ededed;
-  --blueDarkColor: #1f2732;
-  --blueLightColor: #0090ff;
-  --boxShadowColor: rgba(15, 23, 42, .09);
+/* Change data-theme on the <html> element in app/layout.tsx to switch palettes. */
+:root,
+[data-theme="ocean"] {
+  --color-page: #f7fafc;
+  --color-surface: #ffffff;
+  --color-ink: #102a43;
+  --color-heading: #102a43;
+  --color-muted: #627d98;
+  --color-primary: #1677ff;
+  --color-primary-strong: #1265db;
+  --color-primary-dark: #0b4bb3;
+  --color-primary-soft: #bde3ff;
+  --color-accent: #2ec4b6;
+  --color-header: #102a43;
+  --color-header-raised: #163b5b;
+  --color-feature-one: #2ec4b6;
+  --color-feature-two: #1677ff;
+  --color-feature-three: #f4a261;
+  --color-card-heading: #243b53;
+  --color-card-copy: #486581;
+  --color-shadow: rgba(16, 42, 67, .10);
+}
 
-  --background: var(--lightColor);
+[data-theme="current"] {
+  --color-page: #ededed;
+  --color-surface: #ffffff;
+  --color-ink: #1f2732;
+  --color-heading: #252525;
+  --color-muted: #838383;
+  --color-primary: #0090ff;
+  --color-primary-strong: #2756ee;
+  --color-primary-dark: #193da9;
+  --color-primary-soft: #6ea1f3;
+  --color-accent: #ff9818;
+  --color-header: #1f2732;
+  --color-header-raised: #273648;
+  --color-feature-one: #f72226;
+  --color-feature-two: #47a0e2;
+  --color-feature-three: #ffb400;
+  --color-card-heading: #3d415b;
+  --color-card-copy: #363636;
+  --color-shadow: rgba(15, 23, 42, .09);
+}
+
+[data-theme="violet"] {
+  --color-page: #f8f7ff;
+  --color-surface: #ffffff;
+  --color-ink: #171a2b;
+  --color-heading: #171a2b;
+  --color-muted: #62667a;
+  --color-primary: #5b5ce2;
+  --color-primary-strong: #4748c5;
+  --color-primary-dark: #3435a9;
+  --color-primary-soft: #c7c7ff;
+  --color-accent: #22c1c3;
+  --color-header: #171a2b;
+  --color-header-raised: #292d45;
+  --color-feature-one: #5b5ce2;
+  --color-feature-two: #22c1c3;
+  --color-feature-three: #a78bfa;
+  --color-card-heading: #292c3e;
+  --color-card-copy: #565a70;
+  --color-shadow: rgba(23, 26, 43, .10);
 }
 
 @theme inline {
-  --color-background: var(--lightColor);
-  --color-foreground: var(--blueDarkColor);
+  --color-background: var(--color-page);
+  --color-foreground: var(--color-ink);
 }
 
 /* @media (prefers-color-scheme: white) {
