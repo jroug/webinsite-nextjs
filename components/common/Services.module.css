@@ -13,14 +13,23 @@
     min-height: 270px;
     border-radius: 12px;
     background: #fff;
+    box-shadow: 0 12px 32px var(--boxShadowColor);
+    transition: background-color .35s ease, box-shadow .35s ease;
+}
+
+.cardLink {
+    display: block;
+    min-height: 270px;
     padding: 46px 44px;
-    box-shadow: 0 12px 32px rgba(15, 23, 42, .09);
+    color: inherit;
+    text-decoration: none;
 }
 
 .serviceCard .fi {
     display: block;
     margin-bottom: 38px;
     font-size: 48px;
+    transition: color .35s ease;
 }
 
 .serviceCard h3 {
@@ -29,6 +38,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 1.35;
+    transition: color .35s ease;
 }
 
 .serviceCard p {
@@ -38,10 +48,25 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.9;
+    transition: color .35s ease;
+}
+
+.serviceCard:hover {
+    background-color: var(--blueLightColor);
+}
+
+.serviceCard:hover .fi,
+.serviceCard:hover h3,
+.serviceCard:hover p {
+    color: #fff;
 }
 
 @media (max-width: 640px) {
     .serviceCard {
+        min-height: 0;
+    }
+
+    .cardLink {
         min-height: 0;
         padding: 32px;
     }

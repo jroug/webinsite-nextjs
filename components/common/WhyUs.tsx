@@ -2,7 +2,7 @@ import styles from "./WhyUs.module.css";
  
 const WhyUs = () => {
     return (
-        <section id="why-us" className="container mx-auto relative overflow-hidden bg-white py-20 sm:py-28 lg:py-32">
+        <section id="why-us" className="container mx-auto relative overflow-hidden py-20 sm:py-28 lg:py-32">
             <div className="mx-auto grid items-center gap-16 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
                 <div className={styles.whyUsContent}>
                     <p className="text-base font-bold text-[#273041]">Why Us</p>
